@@ -4,8 +4,8 @@ import tkinter
 fenetre = Tk()
 fenetre.geometry('700x200')
 fenetre.title('Gestion des matrices')
-fenetre['bg']='pink'
-label=Label (fenetre,text="Choisir un traiment",background='pink',font=("Times New Roman",20,"italic bold")).pack()
+fenetre['bg']='#F0EAD2'
+label=Label (fenetre,text="Choisir un traiment",background='#F0EAD2',font=("Times New Roman",20,"italic bold")).pack()
 
 
     
@@ -111,15 +111,15 @@ matrice_x_vecteur=Menu(mon_menu)
 #sous onglet matrice x matrice
 matrice_x_matrice=Menu(mon_menu)
 #sous onglet multiplication
-Multiplication=Menu(mon_menu,background='pink')
-Multiplication.add_command(label="passer à la matrice x vecteur",command=passer_a_matrice_x_vecteur,background='red')
-Multiplication.add_command(label="passer à la matrice x matrice",command=passer_a_matrice_x_matrice,background='red')
+Multiplication=Menu(mon_menu,background='#A98467',tearoff=0)
+Multiplication.add_command(label="passer à la matrice x vecteur",command=passer_a_matrice_x_vecteur,background='#DDE5B6')
+Multiplication.add_command(label="passer à la matrice x matrice",command=passer_a_matrice_x_matrice,background='#DDE5B6')
 #sous onglet resolution
-resolution=Menu(mon_menu,background='pink')
-resolution.add_command(label="Passer à la résolution", command=passer_a_resolution, background='red')
+resolution=Menu(mon_menu,background='#ADC178',tearoff=0)
+resolution.add_command(label="Passer à la résolution", command=passer_a_resolution, background='#A98467')
 #principles
-mon_menu.add_cascade(label="Multiplication",menu=Multiplication,background='pink')
-mon_menu.add_cascade(label="Résolution", menu=resolution, background='pink')
+mon_menu.add_cascade(label="Multiplication",menu=Multiplication,background='#ADC178')
+mon_menu.add_cascade(label="Résolution", menu=resolution, background='#A98467')
 
 # Associez le menu à la fenêtre principale
 fenetre.config(menu=mon_menu)
